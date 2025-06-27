@@ -1,0 +1,23 @@
+{% load static %}
+
+<li class="movie-item">
+    <a href="" class="movie-item-link">
+        <img src="{{ movie.poster_url }}" alt="Cartaz do filme">
+        <h2 class="movie-title">{{ movie.title }}</h2>
+        <div class="movie-info-reduced">
+            <div class="created_at">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>{{ movie.created_at|date:"d/m/Y" }} às {{ movie.created_at|date:"H:i" }}</span>
+            </div>
+            <div class="category-name">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>{{ movie.category }}</span>
+            </div>
+            <div class="likes-count">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>{{ movie.likes }}</span>
+            </div>
+            
+        </div>
+    </a>
+</li>

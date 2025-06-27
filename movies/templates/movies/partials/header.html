@@ -1,18 +1,18 @@
 {% load static %}
 
 <header class="main-header-container">
-    <div class="header-screen">
+    <div class="header-logo">
         <a href="{% url "movies:home" %}">
             <img src="{% static "movies/images/cinesys.png" %}" alt="logo do site cinesys">
         </a>
     </div>
-    <nav class="navbar">
-        <ul class="links-list">
-            <li class="link">1</li>
-            <li class="link">2</li>
-            <li class="link">2</li>
-            <li class="link">3</li>
-            <li class="link">4</li>
-        </ul>
-    </nav>
+    <form action="" class="search-container">
+        <input type="text" name="search" id="search" placeholder="Buscar Filme">
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+    <div class="user-container">
+        <i class="fa-solid fa-circle-user"></i>
+    </div>
 </header>

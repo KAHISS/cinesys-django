@@ -1,1 +1,9 @@
 {% extends "global/base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <main class="main-content-container">
+        {% include "movies/partials/list.html" %}
+    </main>
+{% endblock content %}

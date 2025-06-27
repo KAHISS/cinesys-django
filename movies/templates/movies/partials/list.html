@@ -1,0 +1,20 @@
+   <div class="main-movies-list-container">
+        <div class="films-on-display">
+            <h1>Melhores avaliadas</h1>
+            <ul class="movies-list">
+                {% for movie in movies %}
+                    {% if movie.likes >= 500 %}
+                        {% include "movies/partials/movie.html" %}
+                    {% endif %}    
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="upcoming-releases">
+            <h1>Todas as críticas</h1>
+            <ul class="movies-list">
+                {% for movie in movies %}
+                    {% include "movies/partials/movie.html" %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
